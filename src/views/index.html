@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1> Welcome to POC 2</h1>
+        <h3>Application authentication</h3>
+    </div>
+
+    Click to navigate
+    <div class="navBar" >
+        <div> <a href="home"> Home </a></div>
+        <div> <a href="details"> Details</a> </div>
+        <div> <a href="products"> Products </a> </div>
+        <div> <a href="login"> Login </a> </div>
+
+    </div>
+
+    <div class="">
+        <ul>
+            <li> Since the focus is mainly on JWT I haven't used much of styling, validation and DB. </li>
+            <li> Index (Current) page and Home page can be accessed without Login.</li>
+            <li>Details and Products page can be accessed only after login, and logout option is availabe only in these pages  </li>
+            <li>Login page can be accessed only if there are no active session or the JWT token is not verified.</li>
+            <li> Post sucessfuly login or if the session is actie user will be redirected to Details page.</li>
+            <li>As of now the username and password both are 'test'</li>
+
+        </ul>
+    </div>
+</body>
+<style>
+        a {
+            padding: 50%;
+            margin: 50%;
+            color:white;
+        }
+
+        .navBar {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: grey;
+            padding: 10px;
+        }
+
+        .header{
+            text-align: center;
+        }
+    </style>
+</html>
